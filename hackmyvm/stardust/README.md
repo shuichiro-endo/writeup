@@ -7,7 +7,7 @@
 - Link : [https://downloads.hackmyvm.eu/stardust.zip](https://downloads.hackmyvm.eu/stardust.zip)
 
 ## walkthrough
-### TL;DR
+### summary
 - get glpi user and password
 - log in the web site (GLPI)
 - get a subdomain (intranetik.stardust.hmv) from the web site (Assistance > Tickets)
@@ -22,9 +22,8 @@
 - get a root shell
 
 ### get machine ip address
-I could get ip address and hostname from the stardust vm.
 ![](./img/stardust_vm.png)
-
+I could get ip address and hostname from the stardust vm.
 ```mermaid
 flowchart LR
     id1("kali (attacker)
