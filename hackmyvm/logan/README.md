@@ -105,7 +105,7 @@ So, I checked out the website.
 I have uploaded some files. But, I could not find the files from the website.
 - Logs
 ![](./img/web_06.png)
-There was no clearlogs.php file on the website. There was no backup files (clearlogs.php.bak, and so on) too.
+There was neither clearlogs.php file nor backup files (clearlogs.php.bak, and so on) on the website.
 - Payments
 ![](./img/web_07.png)
 I found that there was some files (01, 02, 03) on the website.
@@ -186,7 +186,7 @@ logan@logan:~$ ls -l /opt/learn_some_python.py
 -rw------- 1 root root 132 Jul 18 08:48 /opt/learn_some_python.py
 ```
 
-So. I tried to execute the script.
+So, I tried to execute the script.
 ```
 logan@logan:~$ sudo -u root /usr/bin/python3 /opt/learn_some_python.py
 Welcome!!!
