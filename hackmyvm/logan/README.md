@@ -68,7 +68,7 @@ I think that a form of this website is not working.
 ![](./img/web_03.png)
 
 I could not find useful information from the website.
-So, I tried to find a subdomain.
+So, I tried finding a subdomain.
 - wfuzz
 ```
 ┌──(kali㉿kali)-[~/hackmyvm/logan]
@@ -109,12 +109,12 @@ There was neither clearlogs.php file nor backup files (clearlogs.php.bak, and so
 - Payments
 ![](./img/web_07.png)
 I found there are three files (01, 02, 03) on the website.
-I realized the website removed "../" strings from input strings after trying many things.
+I realized the website removed "../" string from input string after trying many things.
 ![](./img/web_08.png)
-So, I tried "....//....//....//....//etc/passwd" strings, I could get LFI (Local File Inclusion) from the website.
+So, I tried entering "....//....//....//....//etc/passwd" string there, I could get LFI (Local File Inclusion) from the website.
 ![](./img/web_09.png)
 
-Because I could read a postfix log file from the website using LFI, I tried to get a shell using it.
+Because I could read a postfix log file from the website using LFI, I tried getting a shell using it.
 ![](./img/web_10.png)
 ```
 ┌──(kali㉿kali)-[~/hackmyvm/logan]
@@ -186,7 +186,7 @@ logan@logan:~$ ls -l /opt/learn_some_python.py
 -rw------- 1 root root 132 Jul 18 08:48 /opt/learn_some_python.py
 ```
 
-So, I tried to execute the script.
+So, I executed the script.
 ```
 logan@logan:~$ sudo -u root /usr/bin/python3 /opt/learn_some_python.py
 Welcome!!!
