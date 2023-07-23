@@ -125,7 +125,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.23 seconds
         I modified /etc/hosts file.
 - check the subdomain web site (Stardust File Upload)
     ![](./img/web_04.png)
-    I found that I could upload a file with .htaccess extension after trying many things.
+    I found I can upload a file with .htaccess extension after trying many things.
     So, I made two files and uploaded them.
     - .htaccess
         ```
@@ -311,8 +311,8 @@ I found files with ACLs.
     echo "Weather is cool !"
     fi
     ```
-After reading the shell script, I found that I only needed to set coordinates (latitude and longitude) with an elevation greater than 1000. 
-So, I looked up the coordinates of Mt.Fuji and modify /opt/config.json file.
+After reading the shell script, I found I only need to set coordinates (latitude and longitude) with an elevation greater than 1000.
+So, I looked up the coordinates of Mt.Fuji and modified /opt/config.json file.
 - run /opt/meteo
     ```
     tally@stardust:/opt$ cat config.json 
@@ -332,7 +332,7 @@ So, I looked up the coordinates of Mt.Fuji and modify /opt/config.json file.
     tar: Error is not recoverable: exiting now
     BACKUP FINISHED
     ```
-Because of failure to generate backup, I checked to see if there were any schedule jobs.
+Because of failure to generate backup, I checked if there is a schedule job.
 - run [pspy64](https://github.com/DominicBreuker/pspy)
     ```
     2023/07/11 14:15:43 CMD: UID=0    PID=1      | /sbin/init 
