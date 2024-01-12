@@ -1044,7 +1044,7 @@ print "password_hash:".$password_hash."\n";
 
 > php hashpass.php  
 ac0dda55b8d0850ab7da04513caebf34:ac0dda55b8d0850ab7da04513caebf34
-password_hash:$2a$08$eK8BlcLRQjBYXW7AWfEFlO4ViR3NJS.n31MCnYtx.Nsw6LSXSGmkq
+password_hash:$2a$08$LO8.YXrGhyh71azp0OUAJ.Mj2BPM63CeLAi7Zf/ERAEedQ.wHt0Aa
 
 > mysql -uwebiduser -pWtPTIC4FhCLnR7
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
