@@ -519,6 +519,49 @@ Here's your Christmas gift !
 ```
 
 So, I decided to find out other things.
+- /home/mr-jack/.config/.SecureGateway
+```
+> ls -l /home//mr-jack/.config/.SecureGateway
+total 4
+-rwxr-xr-x 1 mr-jack mr-jack 1073 Dec 25 00:00 firewall_config.conf
+
+> cat /home/mr-jack/.config/.SecureGateway/firewall_config.conf
+# Example Firewall Configuration File - firewall_config.conf
+FirewallName = "ChristmasSecureGateway"
+Manufacturer = "Christmas Technologies"
+Model = "XMAS-FW1000"
+FirmwareVersion = "2023.1"
+ManagementInterface = "eth0"
+ManagementIP = "192.168.100.1"
+InternalInterface = "eth1"
+InternalIPRange = "192.168.0.0/24"
+ExternalInterface = "eth2"
+ExternalIP = "203.0.113.5"
+NAT = "Enabled"
+ALLOW 192.168.0.0/24 Any IP Any
+DENY Any Any IP 23
+DENY Any Any IP 21
+RDP 203.0.113.5:3389 -> 192.168.0.10:3389
+HTTP 203.0.113.5:80 -> 192.168.0.20:80
+VPNType = "OpenVPN"
+VPNServerIP = "192.168.100.2"
+VPNPort = 1194
+Encryption = "AES-256-CBC"
+WebInterface = "https://192.168.100.1:8080"
+APIEndpoint = "https://192.168.100.1/api"
+AdminPortalURL = "https://mr-jack:m3rrychr157m4523@192.168.100.1:8080/login"
+SyslogServer = "192.168.100.10"
+LogLevel = "Info"
+AuditTrail = "Enabled"
+IntrusionPreventionSystem = "Enabled"
+AntiVirus = "Enabled"
+AntiSpyware = "Enabled"
+AutoUpdate = "Enabled"
+UpdateServer = "https://update.christmas.hmv"
+LastUpdateCheck = "2023-03-01"
+# End of Configuration File
+```
+
 - /srv/ftp
 ```
 > cd /srv/ftp
