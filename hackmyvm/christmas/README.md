@@ -399,7 +399,7 @@ authorized_keys  id_rsa  id_rsa.pub
 ![](./img/web_08-3.png)
 ![](./img/web_08-4.png)
 ![](./img/web_08-5.png)
-
+![](./img/web_08-6.png)
 
 I could get a user shell (mr-jack) and a user flag (mr-jack). 😺
 ```
